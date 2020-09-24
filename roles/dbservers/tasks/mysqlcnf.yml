@@ -1,0 +1,6 @@
+---
+- name: create mysql cnf file on remote host
+  template:
+    src: mysqlcnf
+    dest: "{{ mysqlcnfdir }}{{ mysqlcnfname }}"
+  become: yes

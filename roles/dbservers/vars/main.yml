@@ -2,3 +2,8 @@
 mysql57: https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm
 mysql57dest: /tmp/
 mysql57pkg: mysql57-community-release-el7-11.noarch.rpm
+datadir: /var/lib/mysqlcustom
+socket: /var/lib/mysql/mysqlcustom.sock
+logerror: /var/log/mysqldcustom.log
+mysqlcnfdir: /etc/
+mysqlcnfname: my.cnf
