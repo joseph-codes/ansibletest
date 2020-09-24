@@ -1,0 +1,6 @@
+---
+- name: Install
+  get_url:
+    url: "{{ mysql57 }}"
+    dest: "{{ mysql57dest }}{{ mysql57pkg }}"
+  become: yes

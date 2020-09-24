@@ -1,0 +1,20 @@
+---
+- name: installs mysql 5.7 .rpm
+  yum:
+    name: "{{ mysql57dest }}{{ mysql57pkg }}"
+    state: present
+  become: yes
+
+- name: installs mysql
+  yum:
+    name: mysql-community-server
+    state: present
+  become: yes
+
+- name: starts mysql
+  shell:
+    cmd: systemctl start mysqld
+
+- name: enables mysql
+  shell:
+    cmd: systemctl enable mysqld

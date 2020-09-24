@@ -1,0 +1,7 @@
+---
+- name: Get mysql5.7 .rpm
+  include: mysqlgetrpm.yml
+- name: Install mysql5.7
+  include: mysqlinstall.yml
+- name: remove mysql5.7 .rpm
+  include: mysqlpkgremove.yml

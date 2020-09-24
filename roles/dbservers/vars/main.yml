@@ -1,0 +1,4 @@
+---
+mysql57: https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm
+mysql57dest: /tmp/
+mysql57pkg: mysql57-community-release-el7-11.noarch.rpm

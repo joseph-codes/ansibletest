@@ -1,0 +1,6 @@
+---
+- name: remove mysql .rpm from remote host
+  file:
+    name: "{{ mysql57dest }}{{ mysql57pkg }}"
+    state: absent
+  become: yes
